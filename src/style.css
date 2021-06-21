@@ -1,0 +1,57 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#block {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: red;
+  z-index: 10;
+}
+
+.product-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+canvas.webgl {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.img-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.img-wrapper div {
+  width: 150px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+
+.imageplanes {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
