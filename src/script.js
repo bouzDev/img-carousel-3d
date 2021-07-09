@@ -87,18 +87,18 @@ function init() {
 
   //controls
 
-  // controls = new OrbitControls(camera, canvas);
-  // controls.addEventListener("change", render); // use if there is no animation loop
-  // controls.minDistance = 2;
-  // controls.maxDistance = 10;
-  // controls.target.set(0, 0, 0);
-  // controls.enableZoom = false;
-  // controls.enableDamping = true;
-  // controls.dampingFactor = 0.1;
-  // controls.minPolarAngle = Math.PI / 2;
-  // controls.maxPolarAngle = Math.PI / 2;
+  controls = new OrbitControls(camera, canvas);
+  controls.addEventListener("change", render); // use if there is no animation loop
+  controls.minDistance = 2;
+  controls.maxDistance = 10;
+  controls.target.set(0, 0, 0);
+  controls.enableZoom = false;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.1;
+  controls.minPolarAngle = Math.PI / 2;
+  controls.maxPolarAngle = Math.PI / 2;
 
-  // controls.update();
+  controls.update();
 
   requestAnimationFrame(animate);
 
@@ -136,7 +136,7 @@ function animate() {
 
   onWindowResize();
 
-  camera.rotation.y = Math.PI * 2;
+  // camera.rotation.y = Math.PI * 2;
 
   time = clock.getElapsedTime();
   delta = clock.getDelta();
